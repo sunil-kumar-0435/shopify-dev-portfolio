@@ -3,20 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunil Kumar | Shopify Developer</title>
+    <title>AURUM | Premium Shopify Atelier</title>
     <style>
-        body { font-family: 'Arial', sans-serif; background-color: #1a1a1a; color: #ffffff; text-align: center; padding: 50px; }
-        .card { background: #2d2d2d; padding: 30px; border-radius: 15px; border: 1px solid #9575cd; display: inline-block; }
-        h1 { color: #9575cd; }
-        .btn { background: #9575cd; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; }
+        /* LUXURY COLOR PALETTE */
+        :root {
+            --gold: #c5a059;
+            --dark: #121212;
+            --cream: #f9f7f2;
+            --white: #ffffff;
+        }
+
+        body { margin: 0; font-family: 'Times New Roman', serif; background-color: var(--cream); color: var(--dark); line-height: 1.6; }
+
+        /* NAVIGATION */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 10%; background: var(--white); border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 24px; letter-spacing: 5px; font-weight: bold; text-transform: uppercase; }
+        .nav-links a { text-decoration: none; color: var(--dark); margin-left: 30px; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; }
+
+        /* HERO SECTION */
+        header { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; color: var(--white); }
+        header h1 { font-size: 60px; font-weight: normal; margin-bottom: 10px; letter-spacing: 10px; }
+        header p { font-size: 18px; letter-spacing: 3px; font-style: italic; }
+        .btn { margin-top: 30px; padding: 15px 40px; border: 1px solid var(--white); color: var(--white); text-decoration: none; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
+        .btn:hover { background: var(--white); color: var(--dark); }
+
+        /* COLLECTION SECTION */
+        .section-title { text-align: center; padding: 80px 0 40px; font-size: 30px; letter-spacing: 5px; text-transform: uppercase; }
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; padding: 0 10%; padding-bottom: 100px; }
+        .product-card { text-align: center; }
+        .product-img { width: 100%; height: 400px; background-color: #ddd; object-fit: cover; border-radius: 2px; transition: transform 0.5s; }
+        .product-img:hover { transform: scale(1.02); }
+        .product-name { margin-top: 15px; font-size: 18px; letter-spacing: 1px; }
+        .price { color: var(--gold); font-weight: bold; }
+
+        /* FOOTER */
+        footer { background: var(--dark); color: var(--white); text-align: center; padding: 60px 0; font-size: 12px; letter-spacing: 2px; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Sunil Kumar M</h1>
-        <p>Shopify Performance & Custom Theme Developer</p>
-        <p>Building high-conversion stores for D2C Brands.</p>
-        <a href="mailto:your-email@gmail.com" class="btn">Hire Me</a>
+
+    <nav>
+        <div class="logo">AURUM</div>
+        <div class="nav-links">
+            <a href="#">Shop</a>
+            <a href="#">Collections</a>
+            <a href="#">Our Story</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>ESSENCE</h1>
+        <p>The 2026 Spring Collection</p>
+        <a href="#" class="btn">Discover the Look</a>
+    </header>
+
+    <h2 class="section-title">The Curated Edit</h2>
+
+    <div class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1539109132314-d4a8c77ee822?auto=format&fit=crop&w=500&q=80" class="product-img">
+            <div class="product-name">Silk Evening Gown</div>
+            <div class="price">₹85,000</div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1594932224010-74f43a18565c?auto=format&fit=crop&w=500&q=80" class="product-img">
+            <div class="product-name">Tailored Wool Blazer</div>
+            <div class="price">₹42,000</div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=500&q=80" class="product-img">
+            <div class="product-name">Leather Artisan Bag</div>
+            <div class="price">₹1,20,000</div>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2026 AURUM ATELIER | DESIGNED BY SUNIL KUMAR M</p>
+    </footer>
+
 </body>
 </html>
